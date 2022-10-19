@@ -62,9 +62,9 @@ export async function selectAllVideo(conceptName) {
 }
 
 
-export function affiche() {
+export function affiche(Name, shot) {
 	var img = document.createElement('img');
-	img.src = require("../assets/keyframes/TRECVID2010_3187/shot3187_5.jpg");
+	img.src = require("../assets/keyframes/" + Name + "/" + shot);
 	document.body.appendChild(img);
 
 }

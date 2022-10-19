@@ -7,14 +7,12 @@ function App() {
 	console.log(da);
 	//affiche("TRECVID2010_3187", "shot3187_5.jpg")
 
-	function click() {
-		console.log("clik")
-	}
+
 
 	return (
 		<div>
 			<p>Hello world</p>
-			<button onClick={affiche}>Click</button>
+			<button onClick={() => affiche("TRECVID2010_3187", "shot3187_5.jpg")}>Click</button>
 
 		</div>
 
