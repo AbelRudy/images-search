@@ -63,10 +63,38 @@ export async function selectAllVideo(conceptName) {
 
 
 export function affiche(Name, shot) {
-	var img = document.createElement('img');
-	img.src = require("../assets/keyframes/" + Name + "/" + shot);
-	document.body.appendChild(img);
+	try {
+		var img = document.createElement('img');
+		img.src = require("../assets/keyframes/" + Name + "/" + shot + ".jpg");
+		document.body.appendChild(img);
+	} catch (error) {
+		// Expected output: ReferenceError: nonExistentFunction is not defined
+		// (Note: the exact output may be browser-dependent)
+	}
 
+}
+
+export function Allimage(conceptName) {
+	var concept = GetConcepts(conceptName);
+	var listVideo = concept.video;
+	listVideo.forEach((item, index) => {
+		if (parseFloat(item["@_Weight"])) {
+			affiche(item["@_Name"], item["@_shotrepres"]);
+		}
+	})
+
+}
+
+export function GetConcepts(Name) {
+	var concepts;
+	var Json = require("../assets/Concepts.json");
+	var AllConcepts = Json.concepts.concept;
+	AllConcepts.forEach((item, index) => {
+		if (item["@_Name"] == Name) {
+			concepts = item;
+		}
+	})
+	return concepts;
 }
 
 

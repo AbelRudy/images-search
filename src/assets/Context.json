@@ -1,0 +1,801 @@
+{
+    "contextes": {
+        "Contexte": [
+            {
+                "@_Num": "1",
+                "@_Name": "Actor",
+                "@_Nbrconcept": "1",
+                "concept": {
+                    "@_ConceptId": "1",
+                    "@_ConceptName": "Actor",
+                    "@_Weight": "1"
+                }
+            },
+            {
+                "@_Num": "2",
+                "@_Name": "Adult",
+                "@_Nbrconcept": "6",
+                "concept": [
+                    {
+                        "@_ConceptId": "5",
+                        "@_ConceptName": "Anchorperson",
+                        "@_Weight": "0,6758"
+                    },
+                    {
+                        "@_ConceptId": "11",
+                        "@_ConceptName": "Beards",
+                        "@_Weight": "0,4138"
+                    },
+                    {
+                        "@_ConceptId": "34",
+                        "@_ConceptName": "Corporate_Leader",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "83",
+                        "@_ConceptName": "News_Studio",
+                        "@_Weight": "0,7786"
+                    },
+                    {
+                        "@_ConceptId": "86",
+                        "@_ConceptName": "Old_People",
+                        "@_Weight": "0,9816"
+                    },
+                    {
+                        "@_ConceptId": "97",
+                        "@_ConceptName": "Reporters",
+                        "@_Weight": "0,8977"
+                    }
+                ]
+            },
+            {
+                "@_Num": "3",
+                "@_Name": "Airplane",
+                "@_Nbrconcept": "2",
+                "concept": [
+                    {
+                        "@_ConceptId": "4",
+                        "@_ConceptName": "Airplane_Flying",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "62",
+                        "@_ConceptName": "Helicopter_Hovering",
+                        "@_Weight": "1"
+                    }
+                ]
+            },
+            {
+                "@_Num": "6",
+                "@_Name": "Animal",
+                "@_Nbrconcept": "5",
+                "concept": [
+                    {
+                        "@_ConceptId": "14",
+                        "@_ConceptName": "Birds",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "23",
+                        "@_ConceptName": "Cats",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "36",
+                        "@_ConceptName": "Cows",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "43",
+                        "@_ConceptName": "Dogs",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "64",
+                        "@_ConceptName": "Horse",
+                        "@_Weight": "1"
+                    }
+                ]
+            },
+            {
+                "@_Num": "26",
+                "@_Name": "charts",
+                "@_Nbrconcept": "1",
+                "concept": {
+                    "@_ConceptId": "76",
+                    "@_ConceptName": "Maps",
+                    "@_Weight": "1"
+                }
+            },
+            {
+                "@_Num": "28",
+                "@_Name": "Cityscape",
+                "@_Nbrconcept": "3",
+                "concept": [
+                    {
+                        "@_ConceptId": "18",
+                        "@_ConceptName": "Building",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "113",
+                        "@_ConceptName": "Streets",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "114",
+                        "@_ConceptName": "Suburban",
+                        "@_Weight": "1"
+                    }
+                ]
+            },
+            {
+                "@_Num": "48",
+                "@_Name": "Entertainment",
+                "@_Nbrconcept": "8",
+                "concept": [
+                    {
+                        "@_ConceptId": "105",
+                        "@_ConceptName": "Singing",
+                        "@_Weight": "0,5137"
+                    },
+                    {
+                        "@_ConceptId": "24",
+                        "@_ConceptName": "Celebrity_Entertainment",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "69",
+                        "@_ConceptName": "Instrumental_Musician",
+                        "@_Weight": "0,5137"
+                    },
+                    {
+                        "@_ConceptId": "38",
+                        "@_ConceptName": "Dancing",
+                        "@_Weight": "0,5137"
+                    },
+                    {
+                        "@_ConceptId": "101",
+                        "@_ConceptName": "Scene_Text",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "115",
+                        "@_ConceptName": "Swimming",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "119",
+                        "@_ConceptName": "Tent",
+                        "@_Weight": "0,5137"
+                    },
+                    {
+                        "@_ConceptId": "20",
+                        "@_ConceptName": "Canoe",
+                        "@_Weight": "0,5137"
+                    }
+                ]
+            },
+            {
+                "@_Num": "49",
+                "@_Name": "Explosion_Fire",
+                "@_Nbrconcept": "1",
+                "concept": {
+                    "@_ConceptId": "49",
+                    "@_ConceptName": "Explosion_Fire",
+                    "@_Weight": "1"
+                }
+            },
+            {
+                "@_Num": "50",
+                "@_Name": "Face",
+                "@_Nbrconcept": "2",
+                "concept": [
+                    {
+                        "@_ConceptId": "51",
+                        "@_ConceptName": "Female_Person",
+                        "@_Weight": "0,4376"
+                    },
+                    {
+                        "@_ConceptId": "52",
+                        "@_ConceptName": "Female-Human-Face-Closeup",
+                        "@_Weight": "1"
+                    }
+                ]
+            },
+            {
+                "@_Num": "67",
+                "@_Name": "Indoor",
+                "@_Nbrconcept": "11",
+                "concept": [
+                    {
+                        "@_ConceptId": "9",
+                        "@_ConceptName": "Basketball",
+                        "@_Weight": "0,4706"
+                    },
+                    {
+                        "@_ConceptId": "29",
+                        "@_ConceptName": "Classroom",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "32",
+                        "@_ConceptName": "Conference_Room",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "35",
+                        "@_ConceptName": "Court",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "65",
+                        "@_ConceptName": "Hospital",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "68",
+                        "@_ConceptName": "Indoor_Sports_Venue",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "72",
+                        "@_ConceptName": "Kitchen",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "73",
+                        "@_ConceptName": "Laboratory",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "83",
+                        "@_ConceptName": "News_Studio",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "85",
+                        "@_ConceptName": "Office",
+                        "@_Weight": "1"
+                    }
+                ]
+            },
+            {
+                "@_Num": "69",
+                "@_Name": "Industrial_Setting",
+                "@_Nbrconcept": "1",
+                "concept": {
+                    "@_ConceptId": "69",
+                    "@_ConceptName": "Industrial_Setting",
+                    "@_Weight": "1"
+                }
+            },
+            {
+                "@_Num": "74",
+                "@_Name": "Landscape",
+                "@_Nbrconcept": "1",
+                "concept": {
+                    "@_ConceptId": "74",
+                    "@_ConceptName": "Landscape",
+                    "@_Weight": "1"
+                }
+            },
+            {
+                "@_Num": "78",
+                "@_Name": "Military",
+                "@_Nbrconcept": "2",
+                "concept": [
+                    {
+                        "@_ConceptId": "79",
+                        "@_ConceptName": "Military_base",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "62",
+                        "@_ConceptName": "Helicopter_Hovering",
+                        "@_Weight": "1"
+                    }
+                ]
+            },
+            {
+                "@_Num": "87",
+                "@_Name": "Outdoor",
+                "@_Nbrconcept": "19",
+                "concept": [
+                    {
+                        "@_ConceptId": "10",
+                        "@_ConceptName": "Beach",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "15",
+                        "@_ConceptName": "Boat_Ship",
+                        "@_Weight": "0,5325"
+                    },
+                    {
+                        "@_ConceptId": "17",
+                        "@_ConceptName": "Bridges",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "18",
+                        "@_ConceptName": "Building",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "40",
+                        "@_ConceptName": "Daytime_Outdoor",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "42",
+                        "@_ConceptName": "Desert",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "61",
+                        "@_ConceptName": "Harbors",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "63",
+                        "@_ConceptName": "Highway",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "79",
+                        "@_ConceptName": "Military_Base",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "81",
+                        "@_ConceptName": "Mountain",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "82",
+                        "@_ConceptName": "Natural_Disaster",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "84",
+                        "@_ConceptName": "Nighttime",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "98",
+                        "@_ConceptName": "Road",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "99",
+                        "@_ConceptName": "Roadway_Junction",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "104",
+                        "@_ConceptName": "Shopping_Mall",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "108",
+                        "@_ConceptName": "Sky",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "109",
+                        "@_ConceptName": "Snow",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "125",
+                        "@_ConceptName": "Vegetation",
+                        "@_Weight": "0,4508"
+                    },
+                    {
+                        "@_ConceptId": "129",
+                        "@_ConceptName": "Waterscape_Waterfront",
+                        "@_Weight": "1"
+                    }
+                ]
+            },
+            {
+                "@_Num": "88",
+                "@_Name": "Overlaid_Text",
+                "@_Nbrconcept": "1",
+                "concept": {
+                    "@_ConceptId": "88",
+                    "@_ConceptName": "Overlaid_Text",
+                    "@_Weight": "1"
+                }
+            },
+            {
+                "@_Num": "90",
+                "@_Name": "Person",
+                "@_Nbrconcept": "28",
+                "concept": [
+                    {
+                        "@_ConceptId": "1",
+                        "@_ConceptName": "Actor",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "7",
+                        "@_ConceptName": "Asian_People",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "16",
+                        "@_ConceptName": "Boy",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "27",
+                        "@_ConceptName": "Cheering",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "34",
+                        "@_ConceptName": "Corporate_Leader",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "37",
+                        "@_ConceptName": "Crowd",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "39",
+                        "@_ConceptName": "Dark-skinned_People",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "45",
+                        "@_ConceptName": "Driver",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "46",
+                        "@_ConceptName": "Eaters",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "50",
+                        "@_ConceptName": "Face",
+                        "@_Weight": "0,9922"
+                    },
+                    {
+                        "@_ConceptID": "51",
+                        "@_ConceptName": "Female_Person",
+                        "@_Weight": "0,9771"
+                    },
+                    {
+                        "@_ConceptId": "52",
+                        "@_ConceptName": "Female-Human-Face-Closeup",
+                        "@_Weight": "0,979"
+                    },
+                    {
+                        "@_ConceptId": "54",
+                        "@_ConceptName": "Girl",
+                        "@_Weight": "0,888"
+                    },
+                    {
+                        "@_ConceptId": "59",
+                        "@_ConceptName": "Hand",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "60",
+                        "@_ConceptName": "Handshaking",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "70",
+                        "@_ConceptName": "Infants",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "75",
+                        "@_ConceptName": "Male_Person",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "77",
+                        "@_ConceptName": "Meeting",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "86",
+                        "@_ConceptName": "Old_People",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "89",
+                        "@_ConceptName": "People_Marching",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "92",
+                        "@_ConceptName": "Police_Private_Security_Personnel",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "95",
+                        "@_ConceptName": "Press_Conference",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "96",
+                        "@_ConceptName": "Prisoner",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "97",
+                        "@_ConceptName": "Reporters",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "106",
+                        "@_ConceptName": "Single_Person",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "107",
+                        "@_ConceptName": "Sitting_Down",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "116",
+                        "@_ConceptName": "Teenagers",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "127",
+                        "@_ConceptName": "Walking",
+                        "@_Weight": "1"
+                    }
+                ]
+            },
+            {
+                "@_Num": "102",
+                "@_Name": "Science_Technology",
+                "@_Nbrconcept": "4",
+                "concept": [
+                    {
+                        "@_ConceptId": "103",
+                        "@_ConceptName": "Scientists",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "117",
+                        "@_ConceptName": "Telephones",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "31",
+                        "@_ConceptName": "Computers",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "30",
+                        "@_ConceptName": "Computer_Or_Television_Screens",
+                        "@_Weight": "1"
+                    }
+                ]
+            },
+            {
+                "@_Num": "111",
+                "@_Name": "Sports",
+                "@_Nbrconcept": "18",
+                "concept": [
+                    {
+                        "@_ConceptId": "8",
+                        "@_ConceptName": "Athlete",
+                        "@_Weight": "0,7621"
+                    },
+                    {
+                        "@_ConceptId": "9",
+                        "@_ConceptName": "Basketball",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "12",
+                        "@_ConceptName": "Bicycles",
+                        "@_Weight": "0,8876"
+                    },
+                    {
+                        "@_ConceptId": "13",
+                        "@_ConceptName": "Bicycling",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "22",
+                        "@_ConceptName": "Car_Racing",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "48",
+                        "@_ConceptName": "Entertainment",
+                        "@_Weight": "0,5271"
+                    },
+                    {
+                        "@_ConceptId": "55",
+                        "@_ConceptName": "Golf",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "68",
+                        "@_ConceptName": "Indoor_Sports_Venue",
+                        "@_Weight": "0,6192"
+                    },
+                    {
+                        "@_ConceptId": "80",
+                        "@_ConceptName": "Motorcycle",
+                        "@_Weight": "0,8526"
+                    },
+                    {
+                        "@_ConceptId": "100",
+                        "@_ConceptName": "Running",
+                        "@_Weight": "0,7834"
+                    },
+                    {
+                        "@_ConceptId": "110",
+                        "@_ConceptName": "Soccer_Player",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "118",
+                        "@_ConceptName": "Tennis",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "128",
+                        "@_ConceptName": "Walking_Running",
+                        "@_Weight": "0,4633"
+                    },
+                    {
+                        "@_ConceptId": "115",
+                        "@_ConceptName": "Swimming",
+                        "@_Weight": "0,7834"
+                    },
+                    {
+                        "@_ConceptId": "120",
+                        "@_ConceptName": "Throwing",
+                        "@_Weight": "0,4634"
+                    },
+                    {
+                        "@_ConceptId": "127",
+                        "@_ConceptName": "Walking",
+                        "@_Weight": "0,4635"
+                    },
+                    {
+                        "@_ConceptId": "20",
+                        "@_ConceptName": "Canoe",
+                        "@_Weight": "0,4636"
+                    },
+                    {
+                        "@_ConceptId": "112",
+                        "@_ConceptName": "Stadium",
+                        "@_Weight": "0,4637"
+                    }
+                ]
+            },
+            {
+                "@_Num": "123",
+                "@_Name": "Two_People",
+                "@_Nbrconcept": "2",
+                "concept": [
+                    {
+                        "@_ConceptId": "57",
+                        "@_ConceptName": "Greeting",
+                        "@_Weight": "0,6795"
+                    },
+                    {
+                        "@_ConceptId": "41",
+                        "@_ConceptName": "Demonstration_Or_Protest",
+                        "@_Weight": "0,6795"
+                    }
+                ]
+            },
+            {
+                "@_Num": "124",
+                "@_Name": "Us_Flags",
+                "@_Nbrconcept": "1",
+                "concept": {
+                    "@_ConceptId": "124",
+                    "@_ConceptName": "Us_Flags",
+                    "@_Weight": "1"
+                }
+            },
+            {
+                "@_Num": "125",
+                "@_Name": "Vegetation",
+                "@_Nbrconcept": "4",
+                "concept": [
+                    {
+                        "@_ConceptId": "53",
+                        "@_ConceptName": "Flowers",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "74",
+                        "@_ConceptName": "Landscape",
+                        "@_Weight": "0,4237"
+                    },
+                    {
+                        "@_ConceptId": "91",
+                        "@_ConceptName": "Plant",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "121",
+                        "@_ConceptName": "Trees",
+                        "@_Weight": "0,496"
+                    }
+                ]
+            },
+            {
+                "@_Num": "126",
+                "@_Name": "Vehicle",
+                "@_Nbrconcept": "9",
+                "concept": [
+                    {
+                        "@_ConceptId": "15",
+                        "@_ConceptName": "Boat_Ship",
+                        "@_Weight": "0,7195"
+                    },
+                    {
+                        "@_ConceptId": "19",
+                        "@_ConceptName": "Bus",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "21",
+                        "@_ConceptName": "Car",
+                        "@_Weight": "0,9432"
+                    },
+                    {
+                        "@_ConceptId": "33",
+                        "@_ConceptName": "Construction_Vehicles",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "47",
+                        "@_ConceptName": "Emergency_Vehicles",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "58",
+                        "@_ConceptName": "Ground_Vehicles",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "80",
+                        "@_ConceptName": "Motorcycle",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "122",
+                        "@_ConceptName": "Truck",
+                        "@_Weight": "1"
+                    },
+                    {
+                        "@_ConceptId": "45",
+                        "@_ConceptName": "Driver",
+                        "@_Weight": "0,4195"
+                    }
+                ]
+            },
+            {
+                "@_Num": "130",
+                "@_Name": "Weather",
+                "@_Nbrconcept": "1",
+                "concept": {
+                    "@_ConceptId": "130",
+                    "@_ConceptName": "Weather",
+                    "@_Weight": "1"
+                }
+            }
+        ]
+    }
+}
