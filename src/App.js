@@ -3,6 +3,10 @@ import { affiche } from "./utils/selectionFunctions"
 import { selectAllVideo } from "./utils/selectionFunctions"
 import { GetConcepts } from "./utils/selectionFunctions";
 import { Allimage } from "./utils/selectionFunctions";
+import "./MyStyle.css";
+import { useRef } from "react";
+
+
 
 function App() {
 	// // Stockez les données dans une variable
@@ -31,20 +35,54 @@ function App() {
 	// var ee = aa.concepts.concept;
 	// console.log(ee);
 
-	var a = GetConcepts("Actor");
-	console.log(a);
-	var e = a.video;
-	console.log(e);
-	var v = e[0]["@_Weight"];
-	console.log(parseFloat(v) >= 0.5);
+	// var a = GetConcepts("Actor");
+	// console.log(a);
+	// var e = a.video;
+	// console.log(e);
+	// var v = e[0]["@_Weight"];
+	// console.log(parseFloat(v) >= 0.5);
+
+	const divRef = useRef(null);
+
+
+	function ModifTaille(list) {
+		if (divRef.current) {
+			list.forEach((item, index) => {
+				//console.log(item);
+				console.log(divRef.current.style.heigth);
+				let heigth = item * 1000 + 200;
+				//console.log(heigth);
+				let width = item * 1000 + 190;
+				divRef.current.style.heigth = heigth + "px";
+				divRef.current.style.width = width + "px";
+
+			})
+		}
+	}
 
 	return (
 		<div>
-			<p>Hello world</p>
-			<button onClick={() => affiche("TRECVID2010_3187", "shot3187_5")}>Click</button>
+			<div>
+				<p>Test de la function </p>
+				<button onClick={() => ModifTaille(Allimage("Actor"))}>TestFunct</button>
+				<button onClick={() => ModifTaille([0.074])}>ModifTaille</button>
+			</div>
+			<div>
+				<h1 id="h1">TTTT</h1>
 
-			<button onClick={() => Allimage("Actor")}>TestFunct</button>
+				<div id="hexagon-0" ref={divRef}>
 
+				</div>
+				<div id="hexagon-1">
+				</div>
+				<div id="hexagon-2">
+				</div>
+				<div id="hexagon-3"></div>
+				<div id="hexagon-4"></div>
+				<div id="hexagon-5"></div>
+				<div id="hexagon-6"></div>
+
+			</div>
 		</div>
 
 

@@ -62,11 +62,11 @@ export async function selectAllVideo(conceptName) {
 }
 
 
-export function affiche(Name, shot) {
+export function affiche(index, image) {
 	try {
 		var img = document.createElement('img');
-		img.src = require("../assets/keyframes/" + Name + "/" + shot + ".jpg");
-		document.body.appendChild(img);
+		img.src = image;
+		document.getElementById("hexagon-" + index).appendChild(img);
 	} catch (error) {
 		// Expected output: ReferenceError: nonExistentFunction is not defined
 		// (Note: the exact output may be browser-dependent)
@@ -77,12 +77,26 @@ export function affiche(Name, shot) {
 export function Allimage(conceptName) {
 	var concept = GetConcepts(conceptName);
 	var listVideo = concept.video;
+	var listImage = [];
+	var listPoids = [];
 	listVideo.forEach((item, index) => {
-		if (parseFloat(item["@_Weight"])) {
-			affiche(item["@_Name"], item["@_shotrepres"]);
+		var weight = parseFloat(item["@_Weight"]);
+		if (weight) {
+			try {
+				var image = require("../assets/keyframes/" + item["@_Name"] + "/" + item["@_shotrepres"] + ".jpg");
+				// Le chargement a réussi, vous pouvez utiliser l'objet exporté par le module.
+				listImage.push(image);
+				listPoids.push(weight);
+			} catch (error) {
+				// Le chargement a échoué, afficher l'erreur dans la console.
+			}
 		}
 	})
 
+	for (let i = 0; i < 8; i++) {
+		affiche(i, listImage[i]);
+	}
+	return listPoids;
 }
 
 export function GetConcepts(Name) {
