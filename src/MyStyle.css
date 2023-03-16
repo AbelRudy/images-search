@@ -1,12 +1,7 @@
-#h1 {
-    color: yellow;
-}
-
 #hexagon-0 {
     width: 200px;
     height: 190px;
     position: absolute;
-    background-color: aqua;
     left: 50%;
     top: 50%;
     margin-left: -100px;
@@ -19,7 +14,6 @@
     width: 200px;
     height: 190px;
     position: absolute;
-    background-color: aqua;
     left: calc(50% - 166.5px);
     top: calc(50% - 100px);
     margin-left: -100px;
@@ -32,7 +26,6 @@
     width: 200px;
     height: 190px;
     position: absolute;
-    background-color: aqua;
     left: calc(50% + 166.5px);
     top: calc(50% - 100px);
     margin-left: -100px;
@@ -45,7 +38,6 @@
     width: 200px;
     height: 190px;
     position: absolute;
-    background-color: aqua;
     left: 50%;
     top: calc(50% - 200px);
     margin-left: -100px;
@@ -58,7 +50,6 @@
     width: 200px;
     height: 190px;
     position: absolute;
-    background-color: yellow;
     left: 50%;
     top: calc(50% + 200px);
     margin-left: -100px;

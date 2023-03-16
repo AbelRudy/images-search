@@ -62,11 +62,13 @@ export async function selectAllVideo(conceptName) {
 }
 
 
-export function affiche(index, image) {
+export function affiche(listimage) {
 	try {
-		var img = document.createElement('img');
-		img.src = image;
-		document.getElementById("hexagon-" + index).appendChild(img);
+		for (let i = 0; i < 8; i++) {
+			var img = document.createElement('img');
+			img.src = listimage[i];
+			document.getElementById("hexagon-" + i).appendChild(img);
+		}
 	} catch (error) {
 		// Expected output: ReferenceError: nonExistentFunction is not defined
 		// (Note: the exact output may be browser-dependent)
@@ -74,7 +76,7 @@ export function affiche(index, image) {
 
 }
 
-export function Allimage(conceptName) {
+export function AllimageData(conceptName) {
 	var concept = GetConcepts(conceptName);
 	var listVideo = concept.video;
 	var listImage = [];
@@ -92,11 +94,9 @@ export function Allimage(conceptName) {
 			}
 		}
 	})
-
-	for (let i = 0; i < 8; i++) {
-		affiche(i, listImage[i]);
-	}
-	return listPoids;
+	listPoids.sort((a, b) => b - a);
+	const data = { poids: listPoids, images: listImage };
+	return data;
 }
 
 export function GetConcepts(Name) {

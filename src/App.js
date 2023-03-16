@@ -1,87 +1,74 @@
 //import { selectConceptByName } from "./utils/selectionFunctions"
-import { affiche } from "./utils/selectionFunctions"
-import { selectAllVideo } from "./utils/selectionFunctions"
-import { GetConcepts } from "./utils/selectionFunctions";
-import { Allimage } from "./utils/selectionFunctions";
+import { affiche, AllimageData } from "./utils/selectionFunctions";
 import "./MyStyle.css";
-import { useRef } from "react";
+import { useEffect } from 'react';
 
 
 
 function App() {
-	// // Stockez les données dans une variable
-	// const jsonData = data;
-	// // var promise = selectAllVideo("Entertainment");
-	// // promise.then(data => data);
-	// //donne tout les concepts
-	// const [data, setData] = useState([])
-	// //truc qui parse le promise en array
-	// useEffect(async () => {
-	// 	let da = await selectAllVideo("Entertainment");
-	// 	setData(da);
-	// 	//affiche("TRECVID2010_3187", "shot3187_5.jpg")
 
-	// }, [])
+	const divIds = ["hexagon-0", "hexagon-1", "hexagon-2", "hexagon-3", "hexagon-4", "hexagon-5", "hexagon-6"];
+	const results = AllimageData("Adult");
+	const listPoids = results.poids;
+	const listImage = results.images;
+	console.log(listPoids);
 
-	// console.log(data)
+	const divList = listPoids.map((number, index) => {
+		let h = number * 10 + 200;
+		let w = number * 10 + 190;
+		// let leftSize = 166.5 + number;
+		// let topSize = 100 + number;
+		var divStyle;
+		// if (index == 1) {
+		// 	divStyle = {
+		// 		height: `${h}px`,
+		// 		width: `${w}px`,
+		// 		left: `calc(50% - ${leftSize}px)`,
+		// 		top: `calc(50% - ${topSize}px)`
+		// 	};
+		// }
+		// else if (index == 2) {
+		// 	console.log(topSize);
+		// 	divStyle = {
+		// 		height: `${h}px`,
+		// 		width: `${w}px`,
+		// 		left: `calc(50% + ${leftSize + (number * 100) + 20}px)`,
+		// 		top: `calc(50% - ${topSize}px)`
+		// 	};
+		// }
+		// else if (index == 3) {
+		// 	console.log(topSize);
+		// 	divStyle = {
+		// 		height: `${h}px`,
+		// 		width: `${w}px`,
+		// 		left: `calc(50% + ${number * 100}px)`,
+		// 		top: `calc(50% - ${topSize * 2 + 30}px)`
+		// 	};
+		// }
+		// else if (index == 4) {
+		// 	console.log(topSize);
+		// 	divStyle = {
+		// 		height: `${h}px`,
+		// 		width: `${w}px`,
+		// 		left: `calc(50% + ${number * 100}px)`,
+		// 		top: `calc(50% + ${topSize * 2 + 70}px)`
+		// 	};
+		// }
+		// else {
+		divStyle = {
+			height: `${h}px`,
+			width: `${w}px`
+		};
+		// }
+		return <div key={index} id={divIds[index]} style={divStyle} />;
+	});
 
-	// // tout les contextes
-	// var a = require("./assets/Context.json");
-	// var e = a.contextes.Contexte;
-	// console.log(e);
-
-	// //tout les concept
-	// var aa = require("./assets/Concepts.json");
-	// var ee = aa.concepts.concept;
-	// console.log(ee);
-
-	// var a = GetConcepts("Actor");
-	// console.log(a);
-	// var e = a.video;
-	// console.log(e);
-	// var v = e[0]["@_Weight"];
-	// console.log(parseFloat(v) >= 0.5);
-
-	const divRef = useRef(null);
-
-
-	function ModifTaille(list) {
-		if (divRef.current) {
-			list.forEach((item, index) => {
-				//console.log(item);
-				console.log(divRef.current.style.heigth);
-				let heigth = item * 1000 + 200;
-				//console.log(heigth);
-				let width = item * 1000 + 190;
-				divRef.current.style.heigth = heigth + "px";
-				divRef.current.style.width = width + "px";
-
-			})
-		}
-	}
+	useEffect(() => { affiche(listImage); }, []);
 
 	return (
 		<div>
 			<div>
-				<p>Test de la function </p>
-				<button onClick={() => ModifTaille(Allimage("Actor"))}>TestFunct</button>
-				<button onClick={() => ModifTaille([0.074])}>ModifTaille</button>
-			</div>
-			<div>
-				<h1 id="h1">TTTT</h1>
-
-				<div id="hexagon-0" ref={divRef}>
-
-				</div>
-				<div id="hexagon-1">
-				</div>
-				<div id="hexagon-2">
-				</div>
-				<div id="hexagon-3"></div>
-				<div id="hexagon-4"></div>
-				<div id="hexagon-5"></div>
-				<div id="hexagon-6"></div>
-
+				{divList}
 			</div>
 		</div>
 
